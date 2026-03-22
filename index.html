@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8"> 
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<script type="text/javascript" src="js/jquery-2.0.3.js"> </script>
+
+
+<script>
+    document.write('<script type="text/javascript"  src="js/partite.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');
+    document.write('<script type="text/javascript"  src="js/campionatoRegioni.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');
+    document.write('<script type="text/javascript"  src="js/giocatori.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');
+    document.write('<link rel="stylesheet" href="css/campionatoSquadre.css?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');
+</script>
+<!--
+<script>
+    document.write('<script type="text/javascript"  src="js/partite.js"\><\/script>');
+    document.write('<script type="text/javascript"  src="js/campionatoRegioni.js"\><\/script>');
+    document.write('<script type="text/javascript"  src="js/giocatori.js"\><\/script>');
+    document.write('<link rel="stylesheet" href="css/campionatoSquadre.css"\><\/script>');
+</script>
+-->
+ 
+</head>
+
+<!-- rilancio la pagina con un parametro per farla caricare se cambiata -->
+<script>
+    var query = window.location.search.substring(1);
+    if (!query)
+      window.location = 'index.html?dev=' + Math.floor(Math.random() * 100);
+    if (query == 'admin')
+    {
+        CAMPIONATO.isAdmin = true;
+    }   
+</script>
+    
+<body>
+    
+<!--                            INTESTAZIONE                                        -->   
+<main align=”center” class="frame-principale"> 
+<div class="intestazione-img">
+    <a href="https://www.chess.com/club/campionato-italiano-a-squadre"  target=”_blank”> <img height="125" width="125" src="img\CIS.png"></a>
+</div>
+<div>
+    <h1 class="intestazione-titolo">Campionato Italiano per Regioni</h1>
+    <br>
+    <h1 class="intestazione-piede">Classifica 2026</h1>
+    <HR>
+</div>
+
+<!--                            SEPARATORE                                      -->   
+<table align="left" width="1240px" height="100px">
+    <tr> </tr>
+    <tr> </tr>
+<tr> <td><h1 class="intestazione-gironi">Classifica Squadre </h1></td> </tr>
+<tr> <td><h1 class="intestazione-help">Nella colonna "Punti" sono riportati i punti classifica, comprensivi delle partite ancora non terminate. Nella colonna "Punti dai match conclusi" sono indicati i punti acquisiti nei match (anche quando i match non sono completati, ma il risultato è comunque acquisito).
+<BR><BR>
+    Nel tabellone, nelle caselle di incrocio delle squadre sono indicati con uno sfondo colorato  i match risolti, in verde quelli vinti dalla squadra in quella riga contro la squadra in quella colonna, in rosso quelli persi e in azzurro quelli pareggiati. Nella casella è scritto il risultato del match e, tra parentesi, il punteggio partite.
+<BR><BR>    
+    Nelle caselle con sfondo bianco è invece riportato il punteggio partite e, tra parentesi, il numero di partite concluse sul numero totale delle partite da giocare. In questo modo è possibile verificare subito in quali match i giochi sono ancora aperti e in quali i giochi sono praticamente fatti.
+    Se la partita deve ancora iniziare viene riportato (in nero) il numero di giocatori iscritti.
+<BR><BR>    
+    È possibile schiacciare con il mouse su una squadra o una partia per vedere la pagina corrispondente in chess.com.
+</h1></td></tr>
+</table>
+
+<!--                            CLASSIFICA                                      -->   
+<div>
+<table  id="classifica" class="classifica-tabella">
+
+    <tr class="classifica-intestazione">
+    </tr>
+        </table>
+
+</div>
+
+    
+<!--                            SEPARATORE                                      -->   
+<table align="left" width="1200px" height="100px">
+    <tr> </tr>
+    <tr> </tr>
+<tr> <td><h1 class="intestazione-gironi">Migliori giocatori</h1></td> </tr>
+<tr id="giocatori-elaborazione"> <td><h1 class="classifica-attendere">Attendere, estrazione dati in corso</h1></td> </tr>
+</table>
+<!--                            Giocatori                                      -->   
+<div>
+<table  id="giocatori" class="classifica-giocatori">
+    <tr class="classifica-intestazione">
+        <td class="classifica-col1"></td> <!-- posizione -->
+        <td class="giocatori-col1SEP">  </td>
+        <td class="classifica-col2">Giocatore</td> 
+        <td class="classifica-col2">Punti</td>
+      <!--   <td class="classifica-col2">Tie Break</td>  -->
+        <td class="classifica-col2">Risultati</td>
+    </tr>
+
+</table>
+
+<table align="left" width="960px" height="100px">
+    <tr> </tr>
+    <tr> </tr>
+<tr> <td><h1 class="intestazione-gironi">Medagliere</h1></td> </tr>
+</table>
+<!--                            MEDAGLIERE                                      -->   
+<div>
+    <table  id="medagliere" class="classifica-giocatori"  width="960px">
+        <tr class="classifica-intestazione">
+            <td class="classifica-col1"></td> 
+            <td class="classifica-col2">Regione</td> 
+            <td class="classifica-colCenter"><img style="height: 64px;" src="img/primo.png"></td>
+            <td class="classifica-colCenter"><img style="height: 64px;"src="img/secondo.png"></td>
+            <td class="classifica-colCenter"><img style="height: 64px;"src="img/terzo.png"></td>
+        </tr>
+    </table>
+</div>
+
+
+<table align="left" width="960px" height="100px">
+    <tr> </tr>
+    <tr> </tr>
+<tr> <td><h1 class="intestazione-gironi">Albo d'oro</h1></td> </tr>
+</table>
+<!--                            ALBO D'ORO                                      -->   
+<div>
+    <table  id="alboOro" class="classifica-giocatori"  width="960px">
+        <tr class="classifica-intestazione">
+            <td class="classifica-colCenter">Stagione</td> 
+            <td class="classifica-col2"><img style="height: 64px;" src="img/primo.png"></td>
+            <td class="classifica-col2"><img style="height: 64px;"src="img/secondo.png"></td>
+            <td class="classifica-col2"><img style="height: 64px;"src="img/terzo.png"></td>
+        </tr>
+    </table>
+</div>
+
+
+<!--                            IMMAGINE  -  LOGO   -->
+    <table  width="950px" height="50px" class="Powered">
+    <tr>
+        <td></td> 
+    </tr>
+</table>
+
+<table  width="950px"   class="Powered">
+
+    <tr>
+            <td align="left" width="950px">Realizzato da Sandro2116 & il_king</td> 
+        </tr>
+    </table> 
+
+
+
+    <script type="text/javascript"> 
+        elabora();
+    </script>
+</main>
+
+</html>
+
