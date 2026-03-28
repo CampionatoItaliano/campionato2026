@@ -25,34 +25,34 @@ var classificaTeams = [];
 
 var albo = [];
 albo[3]={"stagione":"2025","primo":"team-calabria", "secondo":"team-emilia-romagna", "terzo": "team-piemonte"};
-//albo[3]={"stagione":"2024","primo":"team-calabria", "secondo":"udine-e-fvg", "terzo": "team-emilia-romagna"};
+albo[3]={"stagione":"2024","primo":"team-calabria", "secondo":"udine-e-fvg", "terzo": "team-emilia-romagna"};
 albo[4]={"stagione":"2023","primo":"team-emilia-romagna", "secondo":"team-veneto", "terzo": "team-calabria"};
 albo[5]={"stagione":"2022","primo":"team-emilia-romagna", "secondo":"team-calabria", "terzo": "team-marche"};
 albo[6]={"stagione":"2021","primo":"team-emilia-romagna", "secondo":"team-piemonte", "terzo": "team-trentino-sudtirol"};
 albo[7]={"stagione":"2020","primo":"team-emilia-romagna", "secondo":"team-trentino-sudtirol", "terzo": "team-toscana"};
-//albo[8]={"stagione":"2018-2019","primo":"udine-e-fvg", "secondo":"team-emilia-romagna", "terzo": "team-toscana"};
-//albo[9]={"stagione":"2016-2017","primo":"udine-e-fvg,team-emilia-romagna", "secondo":"", "terzo": "i-lumbard"};
+albo[8]={"stagione":"2018-2019","primo":"udine-e-fvg", "secondo":"team-emilia-romagna", "terzo": "team-toscana"};
+albo[9]={"stagione":"2016-2017","primo":"udine-e-fvg,team-emilia-romagna", "secondo":"", "terzo": "i-lumbard"};
 albo[10]={"stagione":"2014-2015","primo":"i-lumbard", "secondo":"team-toscana", "terzo": "team-sicilia"};
 albo[11]={"stagione":"2014","primo":"i-lumbard", "secondo":"", "terzo": ""};
 
 var teams = [];
-    teams['team-toscana']={"name":"Team Toscana", "icon":"https://images.chesscomfiles.com/uploads/v1/group/6814.6e1f2b90.50x50o.652227079b62.gif","url":"https://www.chess.com/club/team-toscana","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
-    teams['i-lumbard']={"name":"I LUMBARD", "icon":"https://images.chesscomfiles.com/uploads/v1/group/16056.48d4e7ff.50x50o.18061584d1fd.jpg","url":"https://www.chess.com/club/i-lumbard","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
-    teams['team-piemonte']={"name":"Team Piemonte", "icon":"https://images.chesscomfiles.com/uploads/v1/group/27066.4baa88c6.50x50o.558e34ad0072.gif","url":"https://www.chess.com/club/team-piemonte","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
-    teams['team-veneto']={"name":"Team Veneto", "icon":"https://images.chesscomfiles.com/uploads/v1/group/27074.54dee974.50x50o.01648245b9bb.gif","url":"https://www.chess.com/club/team-veneto","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
-    teams['team-sicilia']={"name":"Team Sicilia", "icon":"https://images.chesscomfiles.com/uploads/v1/group/5514.8438307c.50x50o.885a60f455da.png","url":"https://www.chess.com/club/team-sicilia","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
-    teams['team-trentino-sudtirol']={"name":"Team Trentino-Südtirol", "icon":"https://images.chesscomfiles.com/uploads/v1/group/75676.7a5fc7bb.50x50o.a003bcd4acad.png","url":"https://www.chess.com/club/team-trentino-sudtirol","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
-    teams['team-napoli-campania']={"name":"Team Napoli-Campania", "icon":"https://images.chesscomfiles.com/uploads/v1/group/20674.920ec37d.50x50o.0ac20c68644c.jpeg","url":"https://www.chess.com/club/team-napoli-campania","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
-    teams['lazio']={"name":"Lazio", "icon":"https://images.chesscomfiles.com/uploads/v1/group/79686.ccc20114.50x50o.3f48ffa1aab6.jpeg","url":"https://www.chess.com/club/lazio","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
-    teams['team-emilia-romagna']={"name":"Team Emilia-Romagna", "icon":"https://images.chesscomfiles.com/uploads/v1/group/27062.0a0a9729.160x160o.5d684d35f646.jpg","url":"https://www.chess.com/club/team-emilia-romagna","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
-    teams['team-basilicata']={"name":"Team Basilicata", "icon":"https://images.chesscomfiles.com/uploads/v1/group/27048.6209b951.50x50o.d3f2039045fd.gif","url":"https://www.chess.com/club/team-basilicata","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
-    teams['team-calabria']={"name":"Team Calabria", "icon":"https://images.chesscomfiles.com/uploads/v1/group/4648.71d067f8.50x50o.0334e256f9c2.jpeg","url":"https://www.chess.com/club/team-calabria","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
-    teams['team-liguria']={"name":"Team Liguria", "icon":"https://images.chesscomfiles.com/uploads/v1/group/27068.a7031ab4.160x160o.9619e6f20283.gif","url":"https://www.chess.com/club/team-liguria","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
-    teams['team-marche']={"name":"Team Marche", "icon":"https://images.chesscomfiles.com/uploads/v1/group/27056.489162c6.160x160o.bb2e9cce5651.gif","url":"https://www.chess.com/club/team-marche","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
-    teams['team-puglia']={"name":"Team Puglia", "icon":"https://images.chesscomfiles.com/uploads/v1/group/27046.9e649aac.160x160o.bd46233987f2.gif","url":"https://www.chess.com/club/team-puglia","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
-    teams['sardegna']={"name":"Sardegna", "icon":"https://images.chesscomfiles.com/uploads/v1/group/183678.37e691e6.160x160o.23a2ef1aab7e.png","url":"https://www.chess.com/club/sardegna","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
+    teams['team-toscana']={"name":"Team Toscana", "dacaricare":true, "icon":"https://images.chesscomfiles.com/uploads/v1/group/6814.6e1f2b90.50x50o.652227079b62.gif","url":"https://www.chess.com/club/team-toscana","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
+    teams['i-lumbard']={"name":"I LUMBARD", "dacaricare":true,  "icon":"https://images.chesscomfiles.com/uploads/v1/group/16056.48d4e7ff.50x50o.18061584d1fd.jpg","url":"https://www.chess.com/club/i-lumbard","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
+    teams['team-piemonte']={"name":"Team Piemonte", "dacaricare":true,  "icon":"https://images.chesscomfiles.com/uploads/v1/group/27066.4baa88c6.50x50o.558e34ad0072.gif","url":"https://www.chess.com/club/team-piemonte","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
+    teams['team-veneto']={"name":"Team Veneto", "dacaricare":true,  "icon":"https://images.chesscomfiles.com/uploads/v1/group/27074.54dee974.50x50o.01648245b9bb.gif","url":"https://www.chess.com/club/team-veneto","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
+    teams['team-sicilia']={"name":"Team Sicilia", "dacaricare":true,  "icon":"https://images.chesscomfiles.com/uploads/v1/group/5514.8438307c.50x50o.885a60f455da.png","url":"https://www.chess.com/club/team-sicilia","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
+    teams['team-trentino-sudtirol']={"name":"Team Trentino-Südtirol", "dacaricare":true,  "icon":"https://images.chesscomfiles.com/uploads/v1/group/75676.7a5fc7bb.50x50o.a003bcd4acad.png","url":"https://www.chess.com/club/team-trentino-sudtirol","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
+    teams['team-napoli-campania']={"name":"Team Napoli-Campania", "dacaricare":true,  "icon":"https://images.chesscomfiles.com/uploads/v1/group/20674.920ec37d.50x50o.0ac20c68644c.jpeg","url":"https://www.chess.com/club/team-napoli-campania","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
+    teams['lazio']={"name":"Lazio", "dacaricare":true,  "icon":"https://images.chesscomfiles.com/uploads/v1/group/79686.ccc20114.50x50o.3f48ffa1aab6.jpeg","url":"https://www.chess.com/club/lazio","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
+    teams['team-emilia-romagna']={"name":"Team Emilia-Romagna", "dacaricare":true,  "icon":"https://images.chesscomfiles.com/uploads/v1/group/27062.0a0a9729.160x160o.5d684d35f646.jpg","url":"https://www.chess.com/club/team-emilia-romagna","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
+    teams['team-basilicata']={"name":"Team Basilicata", "dacaricare":true,  "icon":"https://images.chesscomfiles.com/uploads/v1/group/27048.6209b951.50x50o.d3f2039045fd.gif","url":"https://www.chess.com/club/team-basilicata","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
+    teams['team-calabria']={"name":"Team Calabria", "dacaricare":true,  "icon":"https://images.chesscomfiles.com/uploads/v1/group/4648.71d067f8.50x50o.0334e256f9c2.jpeg","url":"https://www.chess.com/club/team-calabria","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
+    teams['team-liguria']={"name":"Team Liguria", "dacaricare":true,  "icon":"https://images.chesscomfiles.com/uploads/v1/group/27068.a7031ab4.160x160o.9619e6f20283.gif","url":"https://www.chess.com/club/team-liguria","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
+    teams['team-marche']={"name":"Team Marche", "dacaricare":true,  "icon":"https://images.chesscomfiles.com/uploads/v1/group/27056.489162c6.160x160o.bb2e9cce5651.gif","url":"https://www.chess.com/club/team-marche","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
+    teams['team-puglia']={"name":"Team Puglia", "dacaricare":true,  "icon":"https://images.chesscomfiles.com/uploads/v1/group/27046.9e649aac.160x160o.bd46233987f2.gif","url":"https://www.chess.com/club/team-puglia","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
+    teams['sardegna']={"name":"Sardegna", "dacaricare":true,  "icon":"https://images.chesscomfiles.com/uploads/v1/group/183678.37e691e6.160x160o.23a2ef1aab7e.png","url":"https://www.chess.com/club/sardegna","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
 //Solo per Albo
-    teams['udine-e-fvg']={"name":"Udine e FVG", "icon":"https://images.chesscomfiles.com/uploads/v1/group/41872.ca4f33d5.50x50o.04a7832adeab.jpeg","url":"https://www.chess.com/club/udine-e-fvg","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
+    teams['udine-e-fvg']={"name":"Udine e FVG", "dacaricare":false,  "icon":"https://images.chesscomfiles.com/uploads/v1/group/41872.ca4f33d5.50x50o.04a7832adeab.jpeg","url":"https://www.chess.com/club/udine-e-fvg","puntiTotali":0,"puntiSpareggio":0, "posizione":0,  "puntiConclusi":0, "teamVinte" : [], "teamPatte" : [], "albo1":0, "albo2":0, "albo3":0, "puntiAlbo":0, "posizioneAlbo":0};
 
 
 
@@ -66,7 +66,6 @@ function elabora() {
 
 function caricaMatch(index, url)
 {
-    debugger;
     if (url != 'https://api.chess.com/pub/match/')
     {
         //Leggo i dati 
@@ -109,8 +108,11 @@ function caricaMatch(index, url)
                     teams[team2].puntiTotali += 0.5;
                 } 
 
-                //Se terminata anche matematicamente
-                if (matchs[index].boards * 2 == matchs[index].score1 + matchs[index].score2 || matchs[index].boards < matchs[index].score1 || matchs[index].boards < matchs[index].score2)
+                //Se terminata
+                if (matchs[index].boards * 2 == matchs[index].score1 + matchs[index].score2 
+                    //|| matchs[index].boards < matchs[index].score1 
+                    //|| matchs[index].boards < matchs[index].score2
+                    )
                 {
                     matchs[index].concluso = true;   //Per colore in tabella
                     //Aggiorno punti solo conclusi
@@ -255,7 +257,9 @@ function calcolaClassifica()
             }    
             teams[gruppo].posizione = posizione;
             //Aggiungo il team nella posizione corretta
-            classificaTeams.push(gruppo);
+            debugger;
+            if (teams[gruppo].dacaricare)
+               classificaTeams.push(gruppo);
         }
     }
 
