@@ -24,7 +24,7 @@ var calcolaClassificaRun = false;
 var classificaTeams = [];
 
 var albo = [];
-albo[3]={"stagione":"2025","primo":"team-calabria", "secondo":"team-emilia-romagna", "terzo": "team-piemonte"};
+albo[2]={"stagione":"2025","primo":"team-calabria", "secondo":"team-emilia-romagna", "terzo": "team-piemonte"};
 albo[3]={"stagione":"2024","primo":"team-calabria", "secondo":"udine-e-fvg", "terzo": "team-emilia-romagna"};
 albo[4]={"stagione":"2023","primo":"team-emilia-romagna", "secondo":"team-veneto", "terzo": "team-calabria"};
 albo[5]={"stagione":"2022","primo":"team-emilia-romagna", "secondo":"team-calabria", "terzo": "team-marche"};
