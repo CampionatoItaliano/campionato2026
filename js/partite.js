@@ -45,13 +45,13 @@ matchs[56] = {"id":"https://api.chess.com/pub/match/1938879", "daCaricare":true,
 matchs[57] = {"id":"https://api.chess.com/pub/match/1938541", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 
 //Turno 6
-matchs[61] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[62] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[63] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[64] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[65] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[66] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[67] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[61] = {"id":"https://api.chess.com/pub/match/1944989", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[62] = {"id":"https://api.chess.com/pub/match/1945583", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[63] = {"id":"https://api.chess.com/pub/match/1945121", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[64] = {"id":"https://api.chess.com/pub/match/1946847", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[65] = {"id":"https://api.chess.com/pub/match/1945223", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[66] = {"id":"https://api.chess.com/pub/match/1944969", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[67] = {"id":"https://api.chess.com/pub/match/1946545", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 
 //Turno 7
 matchs[71] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
