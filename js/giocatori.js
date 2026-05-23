@@ -22,7 +22,7 @@ function getAvatarUrl(url)
         if (dataAvatar.avatar) {
             giocatori[dataAvatar.username].avatar = dataAvatar.avatar;
         } else {
-            giocatori[dataAvatar.username].avatar = "https://betacssjs.chesscomfiles.com/bundles/web/images/user-image.152ee336.svg";
+            giocatori[dataAvatar.username].avatar = "img/pedone.png";
         }
         giocatori[dataAvatar.username].url = dataAvatar.url;
         giocatori[dataAvatar.username].displayName = dataAvatar.url.substr(29, dataAvatar.url.length-29);
