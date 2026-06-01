@@ -56,7 +56,7 @@ matchs[67] = {"id":"https://api.chess.com/pub/match/1946545", "daCaricare":true,
 //Turno 7
 matchs[71] = {"id":"https://api.chess.com/pub/match/1954567", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 matchs[72] = {"id":"https://api.chess.com/pub/match/1954497", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[73] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[73] = {"id":"https://api.chess.com/pub/match/1956930", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 matchs[74] = {"id":"https://api.chess.com/pub/match/1954765", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 matchs[75] = {"id":"https://api.chess.com/pub/match/1954393", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 matchs[76] = {"id":"https://api.chess.com/pub/match/1954499", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
