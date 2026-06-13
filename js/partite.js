@@ -64,13 +64,13 @@ matchs[77] = {"id":"https://api.chess.com/pub/match/1954439", "daCaricare":true,
 
 
 //Turno 8
-matchs[81] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[82] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[83] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[84] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[85] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[86] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[87] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[81] = {"id":"https://api.chess.com/pub/match/1960854", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[82] = {"id":"https://api.chess.com/pub/match/1961870", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[83] = {"id":"https://api.chess.com/pub/match/1960438", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[84] = {"id":"https://api.chess.com/pub/match/1960520", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[85] = {"id":"https://api.chess.com/pub/match/1960552", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[86] = {"id":"https://api.chess.com/pub/match/1961500", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[87] = {"id":"https://api.chess.com/pub/match/1962076", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 
 //Turno 9
 matchs[91] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
