@@ -126,16 +126,14 @@ matchs[145] = {"id":"https://api.chess.com/pub/match/1995974", "daCaricare":true
 matchs[146] = {"id":"https://api.chess.com/pub/match/1995808", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 matchs[147] = {"id":"https://api.chess.com/pub/match/1994464", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 
-/*
-
 //Turno 15
-matchs[151] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[152] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[153] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[154] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[155] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[156] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[157] = {"id":"https://api.chess.com/pub/match/", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[151] = {"id":"https://api.chess.com/pub/match/2000736", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[152] = {"id":"https://api.chess.com/pub/match/2000738", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[153] = {"id":"https://api.chess.com/pub/match/2000926", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[154] = {"id":"https://api.chess.com/pub/match/2000728", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[155] = {"id":"https://api.chess.com/pub/match/2002114", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[156] = {"id":"https://api.chess.com/pub/match/2000810", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[157] = {"id":"https://api.chess.com/pub/match/2000770", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 
-
+/*
 */
