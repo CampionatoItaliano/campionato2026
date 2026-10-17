@@ -40,7 +40,7 @@ matchs[51] = {"id":"https://api.chess.com/pub/match/1938579", "daCaricare":true,
 matchs[52] = {"id":"https://api.chess.com/pub/match/1938429", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 matchs[53] = {"id":"https://api.chess.com/pub/match/1938665", "daCaricare":false, "punti1":1, "punti2":0, "concluso": true, "team1":"i-lumbard", "team2":"team-basilicata" };
 matchs[54] = {"id":"https://api.chess.com/pub/match/1938545", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-matchs[55] = {"id":"https://api.chess.com/pub/match/1938403", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+//matchs[55] = {"id":"https://api.chess.com/pub/match/1938403", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 matchs[56] = {"id":"https://api.chess.com/pub/match/1938879", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 matchs[57] = {"id":"https://api.chess.com/pub/match/1938541", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 
@@ -88,7 +88,7 @@ matchs[103] = {"id":"https://api.chess.com/pub/match/1972398", "daCaricare":true
 matchs[104] = {"id":"https://api.chess.com/pub/match/1972778", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 matchs[105] = {"id":"https://api.chess.com/pub/match/1972548", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 matchs[106] = {"id":"https://api.chess.com/pub/match/1972792", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-//matchs[107] = {"id":"https://api.chess.com/pub/match/1973412", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[107] = {"id":"https://api.chess.com/pub/match/1973412", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 
 //Turno 11
 matchs[111] = {"id":"https://api.chess.com/pub/match/1977560", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
