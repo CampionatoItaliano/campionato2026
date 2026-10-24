@@ -1,5 +1,4 @@
-﻿
-//        CAMPIONATO.gironi = JSON.parse(stgironi);   
+﻿//        CAMPIONATO.gironi = JSON.parse(stgironi);   
 
 /*
     https://api.chess.com/pub/club/team-toscana
@@ -58,6 +57,7 @@ var teams = [];
 
 
 function elabora() {
+    aggiornaProgresso();
         //Carico i dati di tutti i match
     for (var i in matchs) {
         caricaMatch(i, matchs[i].id);
@@ -96,6 +96,7 @@ function caricaMatch(index, url)
 
             //Se ho caricato tutti i dati calcolo la classifica
             matchs[index].daCaricare = false;
+                aggiornaProgresso();
             for (var i in matchs) {
                 if (matchs[i].daCaricare) {
                     return;
@@ -113,7 +114,7 @@ function caricaMatch(index, url)
         } else {   //Partita valida
 
             //Leggo i dati 
-            $.getJSON(url,function(data){
+            accoda(url, function(data){
 
                 //leggo team
                 var team1 = data.teams.team1.url.substr(27, data.teams.team1.url.length-27);
@@ -197,6 +198,7 @@ function caricaMatch(index, url)
                 }
             //Se ho caricato tutti i dati calcolo la classifica
             matchs[index].daCaricare = false;
+                aggiornaProgresso();
             for (var i in matchs) {
                 if (matchs[i].daCaricare) {
                     return;
@@ -211,31 +213,33 @@ function caricaMatch(index, url)
             //Calcolo la classifica dei team
             calcolaClassifica();
 
-        }).error(function(jqXhr, textStatus, error) {
-                //è andato in errore ricarico i dati
-                //Se responseJSON non è valorizzato solo se il record esiste    
-                if (! jqXhr.responseJSON)
-                {
-                    console.log('ERRORE ricarico dati: ' + this.url);
-                var index = 0;
-                        for (var i in matchs) {
-                            if (matchs[i].url = this.url)
-                                index = i;
-                        };
-                        caricaMatch(index, this.url);    
-                    } else {
-                        console.log('ERRORE Match non valida. ' + this.url);
-                        console.log('ERRORE Match non valida. ' + this.url);
-                        console.log('ERRORE Match non valida. ' + this.url);
-                        console.log('ERRORE Match non valida. ' + this.url);
+        }, function() {
+                //Fallito definitivamente dopo i tentativi: non blocco il resto della pagina
+                console.warn('Match non caricato: ' + url);
+                matchs[index].iscritti1 = 0;
+                matchs[index].iscritti2 = 0;
+                matchs[index].boards = 0;
+                matchs[index].score1 = 0;
+                matchs[index].score2 = 0;
+                matchs[index].concluso = false;
+                matchs[index].daCaricare = false;
+                aggiornaProgresso();
+                for (var i in matchs) {
+                    if (matchs[i].daCaricare) {
+                        return;
                     }
-              
+                }
+                if (calcolaClassificaRun)
+                    return;
+                calcolaClassificaRun = true;
+                calcolaClassifica();
             });
         }
 
     } else {
             //Se ho caricato tutti i dati calcolo la classifica
             matchs[index].daCaricare = false;
+                aggiornaProgresso();
             for (var i in matchs) {
                 if (matchs[i].daCaricare) {
                     return;
@@ -610,5 +614,3 @@ function stampaAlboOro()
     //Ricerco elo e stampo classifica giocatori
     getAvatar();
 }
-
-    
