@@ -40,7 +40,7 @@ matchs[51] = {"id":"https://api.chess.com/pub/match/1938579", "daCaricare":true,
 matchs[52] = {"id":"https://api.chess.com/pub/match/1938429", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 matchs[53] = {"id":"https://api.chess.com/pub/match/1938665", "daCaricare":false, "punti1":1, "punti2":0, "concluso": true, "team1":"i-lumbard", "team2":"team-basilicata" };
 matchs[54] = {"id":"https://api.chess.com/pub/match/1938545", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
-//matchs[55] = {"id":"https://api.chess.com/pub/match/1938403", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
+matchs[55] = {"id":"https://api.chess.com/pub/match/1938403", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 matchs[56] = {"id":"https://api.chess.com/pub/match/1938879", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 matchs[57] = {"id":"https://api.chess.com/pub/match/1938541", "daCaricare":true, "punti1":0, "punti2":0, "concluso": false};
 
